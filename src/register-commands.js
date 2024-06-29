@@ -14,6 +14,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -24,6 +25,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -34,6 +36,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -44,6 +47,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -54,6 +58,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -64,6 +69,7 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -74,12 +80,21 @@ const cmnds = [
             {
                 name:"amount",
                 description:"how many die do you want to roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
     },{
         name:"coinflip",
         description: "Flip a coin 50/50", 
+        options:[
+            {
+                name:"amount",
+                description:"how many times do you want to flip",
+                type:ApplicationCommandOptionType.Number,
+                required: false
+            }
+        ]
     }
 ]
 

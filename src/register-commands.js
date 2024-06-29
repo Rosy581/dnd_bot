@@ -16,6 +16,11 @@ const cmnds = [
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
                 required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
+                required: false
             }
         ]
     },{
@@ -26,6 +31,11 @@ const cmnds = [
                 name:"amount",
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
+                required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
                 required: false
             }
         ]
@@ -38,6 +48,11 @@ const cmnds = [
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
                 required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
+                required: false
             }
         ]
     },{
@@ -48,6 +63,11 @@ const cmnds = [
                 name:"amount",
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
+                required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
                 required: false
             }
         ]
@@ -60,6 +80,11 @@ const cmnds = [
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
                 required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
+                required: false
             }
         ]
     },{
@@ -70,6 +95,11 @@ const cmnds = [
                 name:"amount",
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
+                required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
                 required: false
             }
         ]
@@ -82,6 +112,11 @@ const cmnds = [
                 description:"how many die do you want to roll",
                 type:ApplicationCommandOptionType.Number,
                 required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
+                required: false
             }
         ]
     },{
@@ -92,6 +127,11 @@ const cmnds = [
                 name:"amount",
                 description:"how many times do you want to flip",
                 type:ApplicationCommandOptionType.Number,
+                required: false
+            }, {
+                name:"directmessage",
+                description:"Do you want the results to be dmed to you? or are the dm",
+                type:ApplicationCommandOptionType.Boolean,
                 required: false
             }
         ]

@@ -1,16 +1,26 @@
-const rolls = (fucks,dm) =>{
+const frekayRoll = (fucks,roll) =>{
     fucks = fucks.split("+")
-    console.log(fucks)
-    let mods = []
+    let og = fucks
+    let rolls = []
     for(let i = 0 ;i<fucks.length;i++){
         if(fucks[i].split("d")[0] && fucks[i].split("d").length == 1){
-            mods.push(fucks[i])
+            rolls.push(parseInt(fucks[i]))
         } else {
             fucks[i] = fucks[i].split("d")
         }
 
     }
-    console.log(fucks)
-    console.log(mods)
+    for(let i = 0;i<fucks.length;i++){
+        if(fucks[i].length>1){
+            console.log("ran")
+            rolls = rolls.concat(roll(fucks[i][1],fucks[i][0],0).rolls)
+        }
+    }
+    let total = rolls.reduce((acc,cur)=>{return acc + cur},0)
+    return {
+        rolls,
+        total,
+        og
+    }
 }
-rolls("2d8+4+d6")
+module.exports = frekayRoll

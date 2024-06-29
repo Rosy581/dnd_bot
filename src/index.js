@@ -10,12 +10,11 @@ const {
 const bot = new Client({
 	intents: [
         IntentsBitField.Flags.DirectMessages,
+        IntentsBitField.Flags.Guilds,
+		IntentsBitField.Flags.GuildMembers,
 		IntentsBitField.Flags.GuildMessages,
 		IntentsBitField.Flags.MessageContent,
-	],partials: [
-        Partials.Channel,
-        Partials.Message
-      ]
+	],
 });
 
 const roll = (max, n) =>{
@@ -31,12 +30,25 @@ const roll = (max, n) =>{
     return rolls.join(', ')
 }
 
+bot.on("messageCreate", async (message) => {
+    if(message.author.bot) return
+    if(message.content == "FREAKY"){
+        console.log("fuck")
+        message.author.send("this works")
+    }
+})
+
 bot.on("interactionCreate", async (interaction) => {
 	if (interaction.isChatInputCommand()) {
 		console.log(
 			`${interaction.user.username} command ${interaction.commandName}`
 		);
-        let n = interaction.options.get("amount").value
+        let n = interaction.options.get("amount")
+        if(!n){
+            n = undefined
+        } else {
+            n = n.value
+        }
         console.log(n)
 		switch (interaction.commandName){
             case "d100":

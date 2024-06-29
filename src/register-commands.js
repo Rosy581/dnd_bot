@@ -21,6 +21,11 @@ const cmnds = [
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
                 required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
+                required: false
             }
         ]
     },{
@@ -36,6 +41,11 @@ const cmnds = [
                 name:"directmessage",
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
+                required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -53,6 +63,11 @@ const cmnds = [
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
                 required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
+                required: false
             }
         ]
     },{
@@ -68,6 +83,11 @@ const cmnds = [
                 name:"directmessage",
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
+                required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]
@@ -85,6 +105,11 @@ const cmnds = [
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
                 required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
+                required: false
             }
         ]
     },{
@@ -101,6 +126,11 @@ const cmnds = [
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
                 required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
+                required: false
             }
         ]
     },{
@@ -116,6 +146,11 @@ const cmnds = [
                 name:"directmessage",
                 description:"Do you want the results to be dmed to you? or are the dm",
                 type:ApplicationCommandOptionType.Boolean,
+                required: false
+            },{
+                name:"modifier",
+                description:"Add or subtract however much from the roll",
+                type:ApplicationCommandOptionType.Number,
                 required: false
             }
         ]

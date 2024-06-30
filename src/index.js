@@ -93,12 +93,12 @@ bot.on("interactionCreate", async (interaction) => {
                 str.push(" (")
                 let temp = []
                     for(let j = 0;j<fin.og[i][0];j++){
-                        temp.push(fin.rolls[j+of])
+                        temp = (fin.rolls[j+of])
                     }
-                    of += fin.og[i][0]
                     str.push(temp.join(", "))
                     str.push(") + ")
             } else {
+                of++
                 console.log(fin.rolls[i])
                 str.push(fin.rolls[i],"+ ")
             }

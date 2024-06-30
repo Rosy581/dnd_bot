@@ -13,7 +13,7 @@ const frekayRoll = (fucks,roll) =>{
     for(let i = 0;i<fucks.length;i++){
         if(fucks[i].length>1){
             console.log("ran")
-            rolls = rolls.concat(roll(fucks[i][1],fucks[i][0],0).rolls)
+            rolls = rolls.push(roll(fucks[i][1],fucks[i][0],0).rolls)
         }
     }
     let total = rolls.reduce((acc,cur)=>{return acc + cur},0)

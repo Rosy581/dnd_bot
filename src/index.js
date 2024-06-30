@@ -81,33 +81,23 @@ bot.on("interactionCreate", async (interaction) => {
                 interaction.reply(responce)
             }
         }else {
-        console.log("thru")
         let rollers = interaction.options.get("rolls").value
-        let fin = frekayRoll(rollers,roll)
+        let fin = frekayRoll(rollers)
         let str = []
-        console.log(fin.og)
-        let of = 0
         for(let i = 0;i<fin.og.length;i++){
-            if(fin.og[i].length>1){
-                str.push(fin.og[i][0]+"d"+fin.og[i][1])
-                str.push(" (")
-                let temp = []
-                    for(let j = 0;j<fin.og[i][0];j++){
-                        temp = (fin.rolls[j+of])
-                    }
-                    str.push(temp.join(", "))
-                    str.push(") + ")
+            if(typeof fin.og[i] == "string"){
+                str.push(` ${fin.rolls[i]} +`)
             } else {
-                of++
-                console.log(fin.rolls[i])
-                str.push(fin.rolls[i],"+ ")
+                str.push(` ${fin.og[i][0]}d${fin.og[i][1]} (${fin.rolls[i]}) +`)
             }
-            //split array by pluses kill last indxe and join again with pluses
-    
         }
-        console.log(str.join(""))
+        str = str.join("")
+        str = str.split("")
+        str[str.length-1] = ""
+        str = str.join("")
+        interaction.reply(`**Roll(s) : ** ${str}\n**TOTAL : ** ${fin.total}`)
         if(dm){ 
-            interaction.user.send(`**Roll(s) : ** `)
+            interaction.user.send(`**Roll(s) : ** ${str}\n**TOTAL : ** ${fin.total}`)
         }
 
         }

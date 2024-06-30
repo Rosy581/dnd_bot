@@ -102,6 +102,8 @@ bot.on("interactionCreate", async (interaction) => {
                 console.log(fin.rolls[i])
                 str.push(fin.rolls[i],"+ ")
             }
+            //split array by pluses kill last indxe and join again with pluses
+    
         }
         console.log(str.join(""))
         if(dm){ 

@@ -40,7 +40,7 @@ const frekayRoll = (fucks) =>{
             rolls.push(fucks[i])
             total.push(parseInt(fucks[i]))
         }
-        if(isNaN(parseInt(fucks[i][0]))){
+        if(isNaN(parseInt(fucks[i][0]))){   
             fucks[i][0] = 1
         }
     }

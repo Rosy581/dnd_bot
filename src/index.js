@@ -95,9 +95,11 @@ bot.on("interactionCreate", async (interaction) => {
         str = str.split("")
         str[str.length-1] = ""
         str = str.join("")
-        interaction.reply(`**Roll(s) : ** ${str}\n**TOTAL : ** ${fin.total}`)
+       
         if(dm){ 
             interaction.user.send(`**Roll(s) : ** ${str}\n**TOTAL : ** ${fin.total}`)
+        } else {
+             interaction.reply(`**Roll(s) : ** ${str}\n**TOTAL : ** ${fin.total}`)
         }
 
         }
